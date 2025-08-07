@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--CSS Styles -->
-    <link rel="stylesheet" href="assets/css.css" />
-
+    <link rel="stylesheet" href="assets/css/css.css" />
+    <script defer src="assets/js/js.js"></script>
     <!-- Favicons -->
     <link
       rel="apple-touch-icon"
@@ -39,6 +39,11 @@
         <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><button id="dark-mode-toggle">
+          <span id="dark-mode-icon">🌞</span>
+      </button>
+  
+      </li>
       </ul>
       <button class="burger-menu" id="burger-menu">
         <ion-icon class="bars" name="menu-outline"></ion-icon>
@@ -51,17 +56,15 @@
     <!-- Hero Section -->
     <section class="hero" id="about">
       <img
-        src="assets/6215b323ed64c.jpg"
+        src="assets/images/20160226_132749.jpg"
         alt="sad-boy"
         loading="lazy"
-        class="hero-img animate__animated animate__bounceInLeft"
+        class="hero-img"
       />
-      <div class="bio animate__animated animate__shakeX">
-        <h2 class="bio-title">Me, Myself and I</h2>
+      <div class="bio">
+        <h2 class="bio-title">About Me</h2>
         <p class="bio-text">
-          I'm a Front-End Developer located in San Francisco. I have a passion
-          for UI, animation and dynamic user experiences. Detail-oriented person
-          with optimization and problem solving skills.
+          Hi there! I'm Bryan. I'm a Full-Stack Developer & AI Robotics Engineer with experience in web development, embedded systems, and autonomous vehicle technology. Currently, I'm transitioning into AI-driven robotics, leveraging my background in autonomous systems.
         </p>
         <a href="#contact" style="color: blue">-Let's build something special-</a>
       </div>
@@ -70,11 +73,9 @@
     <!-- More about -->
     <br />
     <section class="more-about">
-      <h2>More About Me</h2>
+      <h2>Boring facts</h2>
       <p>
-        I enjoy boxing, football and building robots. I have a background in
-        Mechanical engineering and started web development during the pandamic
-        shut down.
+        I enjoy cooking and slapstick comedies. I'm usually a coach potatoe but you can easily convice me to go hiking. 
       </p>
     </section>
 
@@ -86,106 +87,125 @@
       <div class="skills-wrapper">
         <div class="first-set animate__animated animate__pulse">
           <img
-            src="assets/icons8-html-5-50.png"
+            src="assets/icons/html-5-svgrepo-com.svg"
             alt=""
             loading="lazy"
             class="icon icon-card"
           />
           <img
-            src="assets/icons8-css3-50-2.png"
+            src="assets/icons/javascript-svgrepo-com.svg"
             alt=""
             loading="lazy"
             class="icon icon-card"
           />
           <img
-            src="assets/icons8-javascript-50-2.png"
+            src="assets/icons/database-svgrepo-com.svg"
             alt=""
             loading="lazy"
             class="icon icon-card"
           />
+          <img
+          src="assets/icons/github-142-svgrepo-com.svg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
         </div>
 
         <div class="second-set animate__animated animate__pulse">
           <img
-            src="assets/icons8-git-50.png"
+            src="assets/icons/docker-svgrepo-com.svg"
             alt=""
             loading="lazy"
             class="icon icon-card"
           />
           <img
-            src="assets/icons8-react-a-javascript-library-for-building-user-interfaces-50.png"
+            src="assets/icons/linux-svgrepo-com.svg"
             alt=""
             loading="lazy"
             class="icon icon-card"
           />
           <img
-            src="assets/icons8-java-50.png"
+            src="assets/icons/python-svgrepo-com.svg"
             alt=""
             loading="lazy"
             class="icon icon-card"
           />
+          <img
+          src="assets/icons/tensorflow-svgrepo-com.svg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        </div>
+
+        <div class="second-set animate__animated animate__pulse">
+          <img
+            src="assets/icons/opencv-svgrepo-com.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/pandas-svgrepo-com.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/CPP.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+          src="assets/icons/ROS2.svg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
         </div>
       </div>
     </section>
 
     <!-- Projects section -->
     <section class="projects" id="projects">
-      <h2 class="projects-title">Some of my Recent Projects</h2>
+      <h2 class="projects-title">Software Engineering Projects</h2>
       <div class="projects-container">
-        <a href="https://votoxvoto.azurewebsites.net/">
-        <div class="project-container project-card">
-          <img
-            src="assets/votoxvoto.jpg"
-            alt="expense-tracker"
-            loading="lazy"
-            class="project-pic"
-          />
-         
-          <h3 class="project-title">VotoXvoto</h3>
-          <p class="project-details">
-           Analytical app that uses demographic data to predict the upcoming election in Mexico.
-          </p>
-        </a>
-        </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/votoxvoto.jpg"
-            alt="netflic-clone"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Netflix Clone</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-          
-        </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/votoxvoto.jpg"
-            alt="greeny-earth"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Greeny Earth</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-         
-        </div>
+          <div class="project-container project-card">
+              <a href="https://votoxvoto.com/2024/">
+                  <img src="assets/images/votoxvoto.svg" alt="VotoXvoto" loading="lazy" class="project-pic" />
+                  <h3 class="project-title">VotoXvoto</h3>
+                  <p class="project-details">Web site dedicated to spreading awareness for upcoming elections in Mexico.</p>
+              </a>
+          </div>
+          <div class="project-container project-card">
+              <a href="https://en.wikipedia.org/wiki/Honey_hole">
+              <img src="assets/images/honeyhole.svg" alt="Honey Hole" loading="lazy" class="project-pic" />
+              <h3 class="project-title">Honey Hole</h3>
+              <p class="project-details">Fishing app providing legal fish sizes, seasons, weather and tide data, and optional spot sharing.</p>
+              </a>
+            </div>
       </div>
-    </section>
+      
+      <h2 class="projects-title">AI & Robotics Projects</h2>
+      <div class="projects-container">
+          <div class="project-container project-card">
+            <a href="https://sites.google.com/view/teleoperation-battleship-galac/home">
+              <img src="assets/images/battlestar.png" alt="Battlestar Galactica" loading="lazy" class="project-pic" />
+              <h3 class="project-title">Battlestar Galactica</h3>
+              <p class="project-details">A teleoperation project focused on improving remote control technologies for distance learning, exploration, and industrial applications.</p>
+            </a>
+            </div>
+      </div>
+  </section>
 
     <!-- Contact section -->
     <section class="contact" id="contact">
       <h2>Get In Touch With Me</h2>
       <div class="contact-form-container">
         <div class="contact-form">
-          <form action="https://formspree.io/f/xyylnggw" method="POST">
+          <form action="https://formspree.io/f/xpwqvyko" method="POST" onsubmit="clearForm(event)">
             <div class="form-control">
               <label for="name">Name</label>
               <input
@@ -233,28 +253,22 @@
 
     <!-- Social accounts - Fixed to the right -->
     <div class="socials">
-      <a href="https://www.instagram.com/" target="_blank"
-        ><img
-          src="assets/icons8-instagram-48.png"
-          alt="Instagram"
-          loading="lazy"
-          class="socicon"
-      /></a>
+
       <a href="https://www.linkedin.com/in/bryan-m-zin/" target="_blank"
         ><img
-          src="assets/linkedin.png"
+          src="assets/icons/linkedin-svgrepo-com.svg"
           alt="Linkedin"
           loading="lazy"
           class="socicon"
       /></a>
       <a href="https://github.com/BryanZin123" target="_blank"
-        ><img src="assets/github.png" alt="Github" class="socicon"
+        ><img src="assets/icons/github-142-svgrepo-com.svg" alt="Github" class="socicon"
       /></a>
     </div>
 
     <!-- Scroll to top -->
     <i class="scroll-up" id="scroll-up"
-      ><img src="assets/arrow-up.png" class="socicon up-arrow" alt=""
+      ><img src="assets/icons/arrow-up.png" class="socicon up-arrow" alt=""
     /></i>
 
     <!-- Footer section -->
@@ -264,12 +278,12 @@
         Built with &#x2661; by
         <a href="https://www.linkedin.com/in/bryan-m-zin/" target="_blank"
           >Bryan Zin</a
-        >
+        >.
       </p>
     </footer>
 
     <!-- Website scripts -->
-    <script src="assets/js.js"></script>
+    <script src="assets/js/js.js"></script>
 
     <!-- Ion icons scripts -->
     <script
